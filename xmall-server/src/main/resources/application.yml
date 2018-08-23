@@ -1,0 +1,14 @@
+#更改端口
+server:
+  port: 8089
+#设置Dubbo
+spring:
+  dubbo:
+    application:
+      name: xmall-server
+    registry:
+      address: zookeeper://localhost:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: user.augustars.xmall
